@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+   <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="font/css/font-awesome.css" />
+    <title> FishNET| Prakasam Fisheries</title>
+  </head>
+  <body oncontextmenu="return false;">
+      <!-- Nav Bar-->
+      <nav class="menu">
+        <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+        </div>
+    <div class="top-bar" id="main-menu">
+    <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"><b>FishNET</b></li>
+      <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-firefox"></i> Aqua Culture</a>
+        <ul class="menu vertical">
+          <li><a href="#"><i class="fa fa-user"></i> Aqua Farmer</a>
+          <ul class="menu vertical">
+          <li><a href="add-aqua-farmer.html"><i class="fa fa-user-plus"></i> Add Aqua Farmer</a></li>
+          <li><a href="#"><i class="fa fa-pencil-square-o"></i> Modify</a></li>
+          <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+        </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-qrcode"></i> Aqua Farm</a>
+            <ul class="menu vertical"> 
+          <li><a href="add-farm-land.html"><i class="fa fa-map"></i> Add Farm Land</a></li>
+          <li><a href="#"><i class="fa fa-object-group"></i> Add Aqua Farm</a></li>
+          <li><a href="#"><i class="fa fa-map-o"></i> Add Defunct Farm</a></li>
+          <li><a href="#"><i class="fa fa-pencil-square-o"></i> Modify</a></li>
+          <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+        </ul>
+          </li>
+            <li><a href="#"><i class="fa fa-flag"></i> Assesment</a>
+            <ul class="menu vertical">
+          <li><a href="add-aqua-farmer.html"><i class="fa fa-plus-square"></i> New Assesment</a></li>
+          <li><a href="#"><i class="fa fa-pencil-square-o"></i> Modify</a></li>
+          <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+        </ul>
+          </li>
+            <li><a href="#"><i class="fa fa-refresh"></i> Revival</a>
+            <ul class="menu vertical">
+              <li><a href="add-aqua-farmer.html"><i class="fa fa-plus"></i> New Revival</a></li>
+              <li><a href="#"><i class="fa fa-pencil-square-o"></i> Modify</a></li>
+              <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+        </ul>
+      </li>
+          <li><a href="#"><i class="fa fa-ship"></i> Marine</a></li>
+          <li><a href="#"><i class="fa fa-pie-chart"></i> Report</a></li>
+          <li><a href="#"><i class="fa fa-street-view"></i>  Master Entry</a></li>
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#"><i class="fa fa-user-secret"></i> Admin</a></li>
+          <li ><a class="button alert" href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+        </ul>
+      </div>
+</div>
+</nav>  <!-- //navbar ends -->
+        
+        <!-- Content -->
+         <div class="callout primary"><b>ADD AQUA FARMER</b></div> 
+         <form action="" id="add-aquafarmer" autocomplete="on"> 
+           <div class="row">
+              <div class="medium-2 columns">
+                  <label>Date</label>
+                  <input type="date" required id="addfarmerdate" autofocus="true">
+              </div>   
+        </div>
+        <div class="row">
+        <div class="medium-4 columns">  
+                    <fieldset class="fieldset">
+                    <legend>Personal Details</legend>
+                    <label>Saluation</label>
+                    <select required>
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Ms.</option>
+                    </select>
+                    <label>Surname</label>
+                    <input type="text" name="name" required>
+                    <label>First Name</label>
+                    <input type="text" name="name" required>
+                    <label>Middle Name</label>
+                    <input type="text" name="name">
+                    <label>Last Name</label>
+                    <input type="text" name="name">
+                   </fieldset>
+                                
+                <fieldset class="fieldset">
+                    <legend>Identity</legend>                    
+                    <label id="uid">Aadhar/UID</label>
+                    <input type="text" required name="num" maxlength="12">
+                    <label id="vid">Voter ID</label>
+                    <input type="text" maxlength="10">
+                    <label>Category</label>
+                        <select required>
+                            <option>OC</option>
+                            <option>BC</option>
+                            <option>BC-A</option>
+                            <option>BC-B</option>
+                            <option>BC-C</option>
+                            <option>BC-D</option>
+                            <option>SC/ST</option>
+                        </select>
+                </fieldset>
+            </div>
+            <div class="medium-4 columns">  
+            <fieldset class="fieldset">
+                <legend>Communication</legend>
+                <input type="tel" required name="mobile" placeholder="Enter Mobile Number" maxlength="10">
+                <input type="email" name="email" placeholder="Enter Email ID if any">
+            </fieldset>
+           <fieldset class="fieldset">
+            <legend>Address</legend>
+             <label>S/o, D/o, W/o</label>
+            <input type="text" name="address" id="address">
+            <label for="address">Address</label>
+            <textarea title="Address" rows="4"></textarea>
+            <label for="village">Village</label>
+            <input type="text">
+            <label for="mandal">Mandal</label>
+            <input type="text">
+       <!-- <label for="grampanchayathi">Gram Panchayathi</label>
+            <input type="text">  -->
+            <label for="pincode">Pin Code</label>
+            <input type="text" name="pincode" maxlength="6">
+            <label for="district">District</label>
+            <input type="text" required value="Prakasam" readonly="true">
+           </fieldset>
+        </div>
+    
+        <div class="medium-4 columns">  
+            <fieldset class="fieldset">
+            <legend>Fisheries Dept. Registration</legend>
+                <input type="text" name="fishregnum" id="fishdepregno" placeholder="Registration Number">
+                <input type="date" name="fishregdate" id="fishdepregdt" placeholder="Registration Date">
+                <input type="text" name="place" placeholder="Registered with ...">
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend>Identity</legend>
+                <div class="panel callout">Upload latest Photo</div>
+                <input type="file" id="FileUpload" class="fileinput" name="photo" accept="image/jpeg,image/jpg,image/png" required>
+                </fieldset>
+            <fieldset class="fieldset">
+                <legend>ID Proof</legend>
+                <div class="panel callout">Upload latest ID Proof</div>
+                <input type="file" class="fileinput" name="photo" accept="image/jpeg,image/jpg,image/png" required>
+            </fieldset>
+                <button type="reset" class="button warning">Reset</button>
+        		<button type="submit" class="button success">Submit</button>
+
+                  </div>
+	        </div>
+        </div>   
+      </form>   
+<!-- Footer -->
+<div class="top-bar" id="footer">
+	<div class="top-bar-left"><b>FishNET</b> All Rights Reserved. Prakasam Fisheries. 2016</div>
+	<div class="top-bar-right">Developed by <a href="#"><b>ARDL</b>.</a> Powered by <a href="#"><b>Ganges Online</b></a></div>
+</div>
+<!-- // Footer ends //-->
+<!-- Initialize Foundation JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+<script>
+$(document).ready(function() { $(document).foundation();
+})
+</script>       
+    </body>
+</html>
