@@ -1,0 +1,285 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+   <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="font/css/font-awesome.css" />
+    <title> FishNET| Prakasam Fisheries</title>
+  </head>
+  <body oncontextmenu="return false;">
+      <!-- Nav Bar-->
+        <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+        </div>
+    <div class="top-bar" id="main-menu">
+    <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"><b>FishNET</b></li>
+      <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-firefox"></i> Aqua Culture</a>
+        <ul class="menu vertical">
+          <li><a href="#"><i class="fa fa-user"></i> Aqua Farmer</a>
+          <ul class="menu vertical">
+          <li><a href="add-aqua-farmer.html"><i class="fa fa-user-plus"></i> Add Aqua Farmer</a></li>
+          <li><a href="#"><i class="fa fa-pencil-square-o"></i> Modify</a></li>
+          <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+        </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-qrcode"></i> Aqua Farm</a>
+            <ul class="menu vertical"> 
+          <li><a href="add-farm-land.html"><i class="fa fa-map"></i> Add Farm Land</a></li>
+          <li><a href="#"><i class="fa fa-object-group"></i> Add Aqua Farm</a></li>
+          <li><a href="#"><i class="fa fa-map-o"></i> Add Defunct Farm</a></li>
+          <li><a href="#"><i class="fa fa-pencil-square-o"></i> Modify</a></li>
+          <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+        </ul>
+          </li>
+            <li><a href="#"><i class="fa fa-flag"></i> Assesment</a>
+            <ul class="menu vertical">
+          <li><a href="add-aqua-farmer.html"><i class="fa fa-plus-square"></i> New Assesment</a></li>
+          <li><a href="#"><i class="fa fa-pencil-square-o"></i> Modify</a></li>
+          <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+        </ul>
+          </li>
+            <li><a href="#"><i class="fa fa-refresh"></i> Revival</a>
+            <ul class="menu vertical">
+              <li><a href="add-aqua-farmer.html"><i class="fa fa-plus"></i> New Revival</a></li>
+              <li><a href="#"><i class="fa fa-pencil-square-o"></i> Modify</a></li>
+              <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-bar-chart"></i> Report</a></li>
+        </ul>
+      </li>
+          <li><a href="#"><i class="fa fa-ship"></i> Marine</a></li>
+          <li><a href="#"><i class="fa fa-pie-chart"></i> Report</a></li>
+          <li><a href="#"><i class="fa fa-street-view"></i>  Master Entry</a></li>
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#"><i class="fa fa-user-secret"></i> Admin</a></li>
+          <li ><a class="button alert" href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+        </ul>
+      </div>
+</div>
+ <!-- //navbar ends -->
+
+  <div class="callout primary"><b>MASTER ENTRY</b> >> Employee Entry </div>
+	<div class="row">
+        <form>
+              <fieldset class="fieldset">
+                  <legend>Employee Entry</legend>
+                  <div class="medium-1 columns">
+                  <label>Code</label>
+                    <input type="text" placeholder="Code" required>
+                   </div>
+                  <div class="medium-3 columns">
+                    <label>Employee Name</label>
+                    <input type="text" placeholder="Employee Name" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Postion</label>
+                    <input type="text" placeholder="Position" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Date of Joining</label>
+                    <input type="date" placeholder="Date of Joining" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Reporting To</label>
+                    <input type="text" placeholder="Reporting To" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Mobile</label>
+                    <input type="text" placeholder="Mobile">
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Email ID</label>
+                    <input type="text" placeholder="Email ID" required>
+                  </div>
+                  <div class="medium-4 columns">
+                    <label>Communication Address</label>
+                    <input type="text" placeholder="Address" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>City</label>
+                    <input type="text" placeholder="City" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Pin Code</label>
+                    <input type="text" placeholder="Pin Code" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>District</label>
+                    <input type="text" placeholder="District" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Save Entry</label>
+                    <button type="reset" class="button warning">Reset</button>
+                    <button type="submit" class="button success">Submit</button>
+                  </div>
+              </fieldset>
+          </form>
+        </div>
+    <div class="row">
+        <form>
+              <fieldset class="fieldset">
+                  <legend>MFRP Employee Entry</legend>
+                  <div class="medium-1 columns">
+                  <label>Code</label>
+                    <input type="text" placeholder="Code" required>
+                   </div>
+                  <div class="medium-3 columns">
+                    <label>Employee Name</label>
+                    <input type="text" placeholder="Employee Name" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Date of Joining</label>
+                    <input type="date" placeholder="Date of Joining" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Contract Validity</label>
+                    <input type="date" placeholder="Reporting To" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Job Type</label>
+                    <input type="text" placeholder="Job Type" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Reporting To</label>
+                    <input type="text" placeholder="Reporting To" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Mobile</label>
+                    <input type="text" placeholder="Mobile">
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Email ID</label>
+                    <input type="text" placeholder="Email ID" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Address</label>
+                    <input type="text" placeholder="Address" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>City</label>
+                    <input type="text" placeholder="City" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Pin Code</label>
+                    <input type="text" placeholder="Pin Code" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>District</label>
+                    <input type="text" placeholder="District" required>
+                  </div>
+                  <div class="medium-2 columns">
+                    <label>Save Entry</label>
+                    <button type="reset" class="button warning">Reset</button>
+                    <button type="submit" class="button success">Submit</button>
+                  </div>
+                  
+              </fieldset>
+          </form>
+	</div>
+  
+  <div class="row">
+   <label><strong>Employees</strong></label>
+    <table class="hover">
+                      <thead>
+                        <tr>
+                          <th>S.No.</th>
+                          <th>Code</th>
+                          <th>Employee Name</th>
+                            <th>Position</th>
+                          <th>DOJ</th>
+                          <th>Reporting To</th>
+                          <th>Mobile</th>
+                          <th width="150">Email ID</th>
+                          <th>Address</th>
+                            <th>City</th>
+                            <th>Pin Code</th>
+                            <th>District</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>EMP02</td>
+                          <td>Sudhakar</td>
+                          <td>Superindent</td>
+                            <td>Asst. Director</td>
+                          <td>05/04/2002</td>
+                          <td>9876543210</td>
+                          <td>sudhakark@gmail.com</td>
+                          <td>East Kammapalem, Near Kothapatnam Bus Stand</td>
+                          <td>Ongole</td>
+                          <td>523001</td>
+                          <td>Prakasam District</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+      <div class="row">
+   <label><strong>MFRP Employees</strong></label>
+    <table class="hover">
+                      <thead>
+                        <tr>
+                          <th>S.No.</th>
+                          <th>Code</th>
+                          <th>Employee Name</th>
+                            <th>Position</th>
+                          <th>DOJ</th>
+                          <th>Reporting To</th>
+                          <th>Mobile</th>
+                          <th width="150">Email ID</th>
+                          <th>Address</th>
+                            <th>City</th>
+                            <th>Pin Code</th>
+                            <th>District</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>EMP02</td>
+                          <td>Sudhakar</td>
+                          <td>Superindent</td>
+                            <td>Asst. Director</td>
+                          <td>05/04/2002</td>
+                          <td>9876543210</td>
+                          <td>sudhakark@gmail.com</td>
+                          <td>East Kammapalem, Near Kothapatnam Bus Stand</td>
+                          <td>Ongole</td>
+                          <td>523001</td>
+                          <td>Prakasam District</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+<!-- Footer -->
+
+<div class="top-bar" id="footer">
+	<div class="top-bar-left"><b>FishNET</b> All Rights Reserved. Prakasam Fisheries. 2016</div>
+	<div class="top-bar-right">Developed by <a href="#"><b>ARDL</b>.</a> Powered by <a href="#"><b>Ganges Online</b></a></div>
+</div>
+<!-- // Footer ends //-->
+	
+	<script src="js/jquery.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/modernizr.js"></script>
+	<script>
+	$(document).ready(function() {
+    $(document).foundation(); })
+	</script>
+
+  </body>
+</html>
