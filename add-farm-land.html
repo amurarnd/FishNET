@@ -95,22 +95,22 @@
     <div class="medium-4 columns">
         <fieldset class="fieldset" id="farmreg">    
         <legend>Farm Registration Details</legend>
-            <form class="form" id="addfarmland">
+            <form id="addfarmland">
             <label>Farm Registered
-            <select id="farmregoption" class="select">
+            <select>
             <option value="yes">Yes</option>
             <option value="no">No</option>
             <option value="not-applicable">Not Applicable</option>
             </select>
             </label>
             <label>Farm Name</label>
-                <input type="text" required id="farmname" placeholder="Registered Name">
+                <input type="text" required placeholder="Registered Name">
             <label>Farm Registration No.</label>
-                <input type="text" required id="farmregno" placeholder="Registered No">
+                <input type="text" required placeholder="Registered No">
                         <label>Registered Date</label>
-                    <input type="date" required id="farmregdate" placeholder="Reg. Date">
+                    <input type="date" required placeholder="Reg. Date">
                         <label>Registered with</label>
-                    <input type="text" required id="regorg" placeholder="Registered With">
+                    <input type="text" required placeholder="Registered With">
                         <label>Registered Category</label>
                         <select class="form-control">
                            <optgroup label="Select">
@@ -124,7 +124,7 @@
                            </optgroup>
                         </select>
                         <label>Reason for not registered</label>
-                            <input type="text" required id="notreg" placeholder="Reasons for not registered">
+                            <input type="text" required placeholder="Reasons for not registered">
                             <button type="reset" class="button warning">Reset</button>
                             <button type="submit" class="button success">Submit</button>
                         </form>
