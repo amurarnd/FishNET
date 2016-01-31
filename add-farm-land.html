@@ -92,25 +92,35 @@
 </div>
 
 <div class="row">
-    <div class="medium-4 columns">
-        <fieldset class="fieldset" id="farmreg">    
+    <form>
+       <fieldset class="fieldset">    
         <legend>Farm Registration Details</legend>
-            <form id="addfarmland">
+            
+            <div class="medium-2 columns">
             <label>Farm Registered
             <select>
             <option value="yes">Yes</option>
             <option value="no">No</option>
             <option value="not-applicable">Not Applicable</option>
             </select>
-            </label>
+            </label></div>
+            <div class="medium-3 columns">
             <label>Farm Name</label>
                 <input type="text" required placeholder="Registered Name">
+                </div>
+                <div class="medium-2 columns">
             <label>Farm Registration No.</label>
                 <input type="text" required placeholder="Registered No">
+                    </div>
+                <div class="medium-2 columns">
                         <label>Registered Date</label>
                     <input type="date" required placeholder="Reg. Date">
+                    </div>
+                <div class="medium-3 columns">
                         <label>Registered with</label>
-                    <input type="text" required placeholder="Registered With">
+                    <input type="text" required placeholder="Registered with Organizations">
+                    </div>
+                <div class="medium-3 columns">
                         <label>Registered Category</label>
                         <select class="form-control">
                            <optgroup label="Select">
@@ -123,15 +133,21 @@
                             <option>Subsidary Company</option>
                            </optgroup>
                         </select>
-                        <label>Reason for not registered</label>
+                        </div>
+                        <div class="medium-4 columns">
+                            <label>Reason for not registered</label>
                             <input type="text" required placeholder="Reasons for not registered">
+                        </div>
+                        <div class="medium-2 columns">
+                            <label>Save Entry</label>
                             <button type="reset" class="button warning">Reset</button>
                             <button type="submit" class="button success">Submit</button>
-                        </form>
-
+                        </div>
                  </fieldset>
+            </form>
                 </div>
-                <div class="medium-4 columns">
+      
+                <div class="row">
                 <fieldset class="fieldset" id="farmreg">    
                    <legend>Farm Land Details</legend>
                         <label>Survery No.</label>
