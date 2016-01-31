@@ -148,18 +148,29 @@
                 </div>
       
                 <div class="row">
-                <fieldset class="fieldset" id="farmreg">    
+                <fieldset class="fieldset">    
                    <legend>Farm Land Details</legend>
-                        <label>Survery No.</label>
-                        <input type="text" required id="syno" placeholder="Enter All Survery Nos">
-                        <label>Land Area</label>
-                    <input type="text" required id="landarea" placeholder="Total Land Area in Hectars (Ha)">
+                    <div class="medium-2 columns">
+                    <label>Survery No.</label>
+                        <input type="text" required placeholder="Enter All Survery Nos">
+                        </div>
+                    <div class="medium-2 columns">
+                        <label>Total Land Area</label>
+                    <input type="text" required placeholder="Area in Hectars (Ha)">
+                        </div>
+                    <div class="medium-2 columns">
                        <label>Water Spread Area</label>
-                    <input type="text" required id="waterspreadarea" placeholder="Total Water Spread Area in Ha">
+                    <input type="text" required placeholder="Water Spread Area in Ha">
+                        </div>
+                    <div class="medium-2 columns">
                         <label>Culture Area</label>
-                    <input type="text" required id="culturearea" placeholder="Culture Area in Ha">
-                        <label>Defunct Area or Not in use land</label>
-                    <input type="text" required id="" placeholder="Defunct Area or Not in use land in Ha">
+                    <input type="text" required placeholder="Culture Area in Ha">
+                        </div>
+                    <div class="medium-2 columns">
+                        <label>Defunct Area</label>
+                    <input type="text" required placeholder="Defunct Area or Not in use land in Ha">
+                        </div>
+                    <div class="medium-2 columns">
                             <label>Water Source</label>
                         <select>
                             <optgroup label="Brackish Water">
@@ -179,7 +190,9 @@
                             <option>Others</option>
                             </optgroup>
                         </select>
-                            <label>Secondary Water Source (if any)</label>
+                        </div>
+                        <div class="medium-2 columns">
+                            <label>Secondary Water Source</label>
                         <select>
                             <optgroup label="Brackish Water">
                                 <option>Brackish Water</option>
@@ -198,34 +211,40 @@
                             <option>Others</option>
                             </optgroup>
                         </select>
-                      	
-                    </fieldset>
+                      	</div>
+                    <div class="medium-2 columns">
+                        <label>Save Entry</label>
+                            <button type="reset" class="button warning">Reset</button>
+                            <button type="submit" class="button success">Submit</button>
+                   </div>
+                </fieldset>
               </div>
-                <div class="medium-4 columns">
-                    <fieldset class="fieldset">
-                    <legend>GPS Co-ordinates</legend>
-                        <form id="gps">
-	                    <div class="panel callout">
+
+                <div class="row">
+                    <form>
+                        <fieldset class="fieldset">
+                        <legend>GPS Co-ordinates</legend>
+                        <div class="medium-4 columns">
+                            <label>Map</label>
+	                        <div class="panel callout">
 		                    <input type="file">
-	                    </div>
-	                    <div class="panel callout">
-		                    <input type="file">
+	                         </div>
                         </div>
-	                    
-	                    <div class="panel callout">
+                            <div class="medium-4 columns">
+                            <label>Farm Land Photo</label>
+	                        <div class="panel callout">
 		                    <input type="file">
-	                    </div>
-                            </form>  
-                    </fieldset>
-                    </div>
-                     <div class="medium-4 columns">
+                            </div>
+                        </div>
+                       
+                     <div class="medium-2 columns">
+                         <label>Save Entry</label>
 					    <button type="reset" class="button warning">Reset</button>
 						<button type="submit" class="button success">Submit</button>
 	           		</div>
-                    </div>
-                   </div>
-            </div>
-          </form>
+                   </fieldset>
+                 </form> 
+                </div>
 <!-- Footer -->
 <div class="top-bar" id="footer">
 	<div class="top-bar-left"><b>FishNET</b> All Rights Reserved. Prakasam Fisheries. 2016</div>
