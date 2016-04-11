@@ -78,8 +78,8 @@
 
 <div class="row">
     <div class="medium-4 columns">
-        <label>Farmer Details</label>
-           <form id="add-farmland" autocomplete="on">
+        <label class="label warning">Farmer Details</label>
+           <form autocomplete="on">
                 <div class="input-group">
 				    <span class="input-group-label"><i class="fa fa-user"></i></span>
 	                <input class="input-group-field" type="text" placeholder="Farmer Code" autofocus="true" required>
@@ -92,25 +92,34 @@
 </div>
 
 <div class="row">
-    <div class="medium-4 columns">
-        <fieldset class="fieldset" id="farmreg">    
+    <form>
+       <fieldset class="fieldset">    
         <legend>Farm Registration Details</legend>
-            <form class="form" id="addfarmland">
+            <div class="medium-2 columns">
             <label>Farm Registered
-            <select id="farmregoption" class="select">
+            <select>
             <option value="yes">Yes</option>
             <option value="no">No</option>
             <option value="not-applicable">Not Applicable</option>
             </select>
-            </label>
+            </label></div>
+            <div class="medium-3 columns">
             <label>Farm Name</label>
-                <input type="text" required id="farmname" placeholder="Registered Name">
+                <input type="text" required placeholder="Registered Name">
+                </div>
+                <div class="medium-2 columns">
             <label>Farm Registration No.</label>
-                <input type="text" required id="farmregno" placeholder="Registered No">
+                <input type="text" required placeholder="Registered No">
+                    </div>
+                <div class="medium-2 columns">
                         <label>Registered Date</label>
-                    <input type="date" required id="farmregdate" placeholder="Reg. Date">
+                    <input type="date" required placeholder="Reg. Date">
+                    </div>
+                <div class="medium-3 columns">
                         <label>Registered with</label>
-                    <input type="text" required id="regorg" placeholder="Registered With">
+                    <input type="text" required placeholder="Registered with Organizations">
+                    </div>
+                <div class="medium-3 columns">
                         <label>Registered Category</label>
                         <select class="form-control">
                            <optgroup label="Select">
@@ -123,93 +132,118 @@
                             <option>Subsidary Company</option>
                            </optgroup>
                         </select>
-                        <label>Reason for not registered</label>
-                            <input type="text" required id="notreg" placeholder="Reasons for not registered">
+                        </div>
+                        <div class="medium-4 columns">
+                            <label>Reason for not registered</label>
+                            <input type="text" required placeholder="Reasons for not registered">
+                        </div>
+                        <div class="medium-2 columns">
+                            <label>Save Entry</label>
                             <button type="reset" class="button warning">Reset</button>
                             <button type="submit" class="button success">Submit</button>
-                        </form>
-
-                 </fieldset>
-                </div>
-                <div class="medium-4 columns">
-                <fieldset class="fieldset" id="farmreg">    
-                   <legend>Farm Land Details</legend>
-                        <label>Survery No.</label>
-                        <input type="text" required id="syno" placeholder="Enter All Survery Nos">
-                        <label>Land Area</label>
-                    <input type="text" required id="landarea" placeholder="Total Land Area in Hectars (Ha)">
-                       <label>Water Spread Area</label>
-                    <input type="text" required id="waterspreadarea" placeholder="Total Water Spread Area in Ha">
-                        <label>Culture Area</label>
-                    <input type="text" required id="culturearea" placeholder="Culture Area in Ha">
-                        <label>Defunct Area or Not in use land</label>
-                    <input type="text" required id="" placeholder="Defunct Area or Not in use land in Ha">
-                            <label>Water Source</label>
-                        <select>
-                            <optgroup label="Brackish Water">
-                                <option>Brackish Water</option>
-                                <option>Creeks</option>
-                                <option>Canals</option>
-                                <option>Rivers</option>
-                                <option>Drains</option>
-                                <option>Backwaters</option>
-                            </optgroup>
-                            <optgroup label="Fresh Water">
-                                <option>Creeks</option>
-                                <option>Canals</option>
-                                <option>Rivers</option>
-                                <option>Drains</option>
-                                <option>Ground Water</option>
-                            <option>Others</option>
-                            </optgroup>
-                        </select>
-                            <label>Secondary Water Source (if any)</label>
-                        <select>
-                            <optgroup label="Brackish Water">
-                                <option>Brackish Water</option>
-                                <option>Creeks</option>
-                                <option>Canals</option>
-                                <option>Rivers</option>
-                                <option>Drains</option>
-                                <option>Backwaters</option>
-                            </optgroup>
-                            <optgroup label="Fresh Water">
-                                <option>Creeks</option>
-                                <option>Canals</option>
-                                <option>Rivers</option>
-                                <option>Drains</option>
-                                <option>Ground Water</option>
-                            <option>Others</option>
-                            </optgroup>
-                        </select>
-                      	
-                    </fieldset>
-              </div>
-                <div class="medium-4 columns">
-                    <fieldset class="fieldset">
-                    <legend>GPS Co-ordinates</legend>
-                        <form id="gps">
-	                    <div class="panel callout">
-		                    <input type="file">
-	                    </div>
-	                    <div class="panel callout">
-		                    <input type="file">
                         </div>
-	                    
-	                    <div class="panel callout">
+                 </fieldset>
+            </form>
+                </div>
+      
+                <div class="row">
+                <fieldset class="fieldset">    
+                   <legend>Farm Land Details</legend>
+                    <div class="medium-2 columns">
+                    <label>Survery No.</label>
+                        <input type="text" required placeholder="Enter All Survery Nos">
+                        </div>
+                    <div class="medium-2 columns">
+                        <label>Total Land Area</label>
+                    <input type="text" required placeholder="Area in Hectars (Ha)">
+                        </div>
+                    <div class="medium-2 columns">
+                       <label>Water Spread Area</label>
+                    <input type="text" required placeholder="Water Spread Area in Ha">
+                        </div>
+                    <div class="medium-2 columns">
+                        <label>Culture Area</label>
+                    <input type="text" required placeholder="Culture Area in Ha">
+                        </div>
+                    <div class="medium-2 columns">
+                        <label>Defunct Area</label>
+                    <input type="text" required placeholder="Defunct Area or Not in use land in Ha">
+                        </div>
+                    <div class="medium-2 columns">
+                            <label>Water Source 1</label>
+                        <select>
+                            <optgroup label="Brackish Water">
+                                <option>Brackish Water</option>
+                                <option>Creeks</option>
+                                <option>Canals</option>
+                                <option>Rivers</option>
+                                <option>Drains</option>
+                                <option>Backwaters</option>
+                            </optgroup>
+                            <optgroup label="Fresh Water">
+                                <option>Creeks</option>
+                                <option>Canals</option>
+                                <option>Rivers</option>
+                                <option>Drains</option>
+                                <option>Ground Water</option>
+                            <option>Others</option>
+                            </optgroup>
+                        </select>
+                        </div>
+                        <div class="medium-2 columns">
+                            <label>Water Source 2</label>
+                        <select>
+                            <optgroup label="Brackish Water">
+                                <option>Brackish Water</option>
+                                <option>Creeks</option>
+                                <option>Canals</option>
+                                <option>Rivers</option>
+                                <option>Drains</option>
+                                <option>Backwaters</option>
+                            </optgroup>
+                            <optgroup label="Fresh Water">
+                                <option>Creeks</option>
+                                <option>Canals</option>
+                                <option>Rivers</option>
+                                <option>Drains</option>
+                                <option>Ground Water</option>
+                            <option>Others</option>
+                            </optgroup>
+                        </select>
+                      	</div>
+                    <div class="medium-2 columns">
+                        <label>Save Entry</label>
+                            <button type="reset" class="button warning">Reset</button>
+                            <button type="submit" class="button success">Submit</button>
+                   </div>
+                </fieldset>
+              </div>
+
+                <div class="row">
+                    <form>
+                        <fieldset class="fieldset">
+                        <legend>GPS Co-ordinates</legend>
+                        <div class="medium-4 columns">
+                            <label class="label">Farm Land Map</label>
+	                        <div class="panel callout">
 		                    <input type="file">
-	                    </div>
-                            </form>  
-                    </fieldset>
-                    </div>
-                     <div class="medium-4 columns">
+	                         </div>
+                        </div>
+                            <div class="medium-4 columns">
+                            <label class="label">Farm Land Photo</label>
+	                        <div class="panel callout">
+		                    <input type="file">
+                            </div>
+                        </div>
+                       
+                     <div class="medium-2 columns">
+                         <label>Save Entry</label>
 					    <button type="reset" class="button warning">Reset</button>
 						<button type="submit" class="button success">Submit</button>
 	           		</div>
-                    </div>
-                   </div>
-            </div>
-          </form>
+                   </fieldset>
+                 </form> 
+                </div>
 <!-- Footer -->
 <div class="top-bar" id="footer">
 	<div class="top-bar-left"><b>FishNET</b> All Rights Reserved. Prakasam Fisheries. 2016</div>
